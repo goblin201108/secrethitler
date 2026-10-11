@@ -1,0 +1,11 @@
+[project]
+name = "secret-hitler-bot"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "aiogram>=3.4,<4",
+    "aiohttp>=3.9",
+]
+
+[tool.vercel]
+entrypoint = "api.webhook:handler"
